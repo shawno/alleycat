@@ -1,5 +1,8 @@
 Alleycat::Application.routes.draw do
   
+  resources :issues
+
+
   get "users/index"
 
   devise_for :users

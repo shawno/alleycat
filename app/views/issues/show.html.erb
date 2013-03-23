@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @issue.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @issue.longitude %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @issue.image %>
+</p>
+
+<p>
+  <b>User ID:</b>
+  <%= @issue.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
