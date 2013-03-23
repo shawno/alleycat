@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'jquery-rails'
-gem 'sqlite3'
 gem 'thin'
 gem 'devise'
 gem 'bootstrap-sass'
