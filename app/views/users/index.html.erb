@@ -1,68 +1,15 @@
 <ul class="leaderboard">
-	<li class="clearfix">
-		<a href="">
-			<div class="img"></div>
-			<h5>Firstname Lastname</h5>
-			<div class="score pull-right">
-				<i class="icon-star"></i>
-				<span class="label label-warning">100
-				</span>
-			</div> 
-		</a>
-	</li>	
-	<li>
-		<a href="">
-			<div class="img"></div>
-			<h5>Firstname Lastname</h5>
-			<div class="score pull-right">
-				<i class="icon-star"></i>
-				<span class="label label-warning">100
-				</span>
-			</div> 
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<div class="img"></div>
-			<h5>Firstname Lastname</h5>
-			<div class="score pull-right">
-				<i class="icon-star"></i>
-				<span class="label label-warning">100
-				</span>
-			</div> 
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<div class="img"></div>
-			<h5>Firstname Lastname</h5>
-			<div class="score pull-right">
-				<i class="icon-star"></i>
-				<span class="label label-warning">100
-				</span>
-			</div> 
-		</a>
-	</li>	
-	<li>
-		<a href="">
-			<div class="img"></div>
-			<h5>Firstname Lastname</h5>
-			<div class="score pull-right">
-				<i class="icon-star"></i>
-				<span class="label label-warning">100
-				</span>
-			</div> 
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<div class="img"></div>
-			<h5>Firstname Lastname</h5>
-			<div class="score pull-right">
-				<i class="icon-star"></i>
-				<span class="label label-warning">100
-				</span>
-			</div> 
-		</a>
-	</li>		
+	<% @users.each do |user| %>
+		<li>
+			<a href="">
+				<div class="img"></div>
+				<h5><% user.email %></h5>
+				<div class="score pull-right">
+					<i class="icon-star"></i>
+					<span class="label label-warning">100
+					</span>
+				</div> 
+			</a>
+		</li>			
+	<% end %>
 </ul>

@@ -2,15 +2,12 @@ Alleycat::Application.routes.draw do
   
   resources :issues
 
-
   get "users/index"
 
   devise_for :users
   resources :users
 
-  get "pages/home"
-
-  root :to => "pages#home"
+  root :to => "issues#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -30,9 +30,16 @@
 	  <div class="navbar-inner">
 	    <div class="container">
 	    	<ul class="nav">
-	      	<a class="btn-medium btn"><i class="icon-star"></i>Leaderboard</a>
-	      	<a class="btn-medium btn"><i class="icon-reorder"></i>Issues</a>
-	      	<a class="btn-medium btn"><i class="icon-user"></i>Profile</a>
+	      	
+			<%= link_to users_path, :class => "btn-medium btn" do %>
+				<i class="icon-star"></i>Leaderboard
+			<% end %>
+			<%= link_to new_issue_path, :class => "btn-medium btn" do %> 
+				<i class="icon-user"></i>New Photo
+			<% end %>
+	      	<%= link_to issues_path, :class => "btn-medium btn" do %>
+				<i class="icon-reorder"></i>Issues
+			<% end %>
 	      </ul> 
 	    </div>
 	  </div>
