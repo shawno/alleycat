@@ -13,20 +13,7 @@
 
   <%= f.hidden_field :user_id, :value => current_user.nil? ? "" : current_user.id  %>
 
-  <div class="field">
-    <%= f.label :latitude %><br />
-    <%= f.text_field :latitude %>
-  </div>
-  <div class="field">
-    <%= f.label :longitude %><br />
-    <%= f.text_field :longitude %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br />
-    <%= f.text_field :image %>
-  </div>
-
-	<input type="file" accept="image/*" capture="camera">photo</input>
+  <%= f.file_field :image %>
 	
   <div class="actions">
     <%= f.submit %>
