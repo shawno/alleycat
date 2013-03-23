@@ -1,3 +1,35 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+ul.leaderboard {
+	margin-left: 0;
+	h5 {
+		float: left;
+		margin-left: 10px;
+	}
+	li {
+		list-style-type: none;		
+		clear: both;
+		border-bottom: 1px solid #ddd;
+		display: block;
+		a {
+			display: block;
+			padding: 10px;
+			overflow: auto;
+			line-height: 37px;
+			color: #333;
+		}
+		div.img {
+			width: 40px;
+			height: 40px;
+			background: #eee;
+			float: left;
+			border: 1px solid #ccc;
+		}
+			&:nth-child(odd) {
+				background: #eee;
+			}
+		}
+	.score {
+		i {
+			color: #333;
+		}
+	}
+}
