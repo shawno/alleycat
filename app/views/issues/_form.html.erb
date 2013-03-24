@@ -15,9 +15,9 @@
   <%= f.hidden_field :latitude, :id => "new_issue_latitude" %>
   <%= f.hidden_field :longitude, :id => "new_issue_longitude" %>
 
-  <%= f.file_field :image, :id => "new_issue_image_button" %>
+  <%= f.file_field :image, :id => "new_issue_image_button"%>
 	
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions" style="margin-top:50px;">
+    <%= f.submit :class => "btn btn-large btn-primary" %>
   </div>
 <% end %>

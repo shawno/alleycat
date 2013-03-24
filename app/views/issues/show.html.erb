@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<script>
+	$(window).ready(function(){  
+    	build_map();  
+	});
+	var image_url = "http://maps.google.com/maps/api/staticmap?sensor=false&center=" + 
+	<%= @issue.latitude %> + "," + <%= @issue.longitude %> + 
+	"&zoom=14&size=300x400&markers=color:blue|label:S|" +  
+	<%= @issue.latitude %> + ',' + <%= @issue.longitude %>;    
+	    jQuery(document.body).append(
+	        jQuery(document.createElement("img")).attr("src", image_url).attr('id','map')  
+	    );
+</script>
+
 <%= image_tag @issue.image.url(:medium) %>
 
 <p>
@@ -16,6 +29,8 @@
   <b>Longitude:</b>
   <%= @issue.longitude %>
 </p>
+
+
 
 
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
