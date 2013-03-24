@@ -22,8 +22,9 @@
             }  
         }  
         function handle_geolocation_query(position){  
-            alert('Lat: ' + position.coords.latitude +  
-                  ' Lon: ' + position.coords.longitude);  
+            $('#new_issue_latitude').val(position.coords.latitude);  
+            $('#new_issue_longitude').val(position.coords.longitude);
+			$('#new_issue_image_button').click();
         }
     </script>	
 

@@ -12,8 +12,10 @@
   <% end %>
 
   <%= f.hidden_field :user_id, :value => current_user.nil? ? "" : current_user.id  %>
+  <%= f.hidden_field :latitude, :id => "new_issue_latitude" %>
+  <%= f.hidden_field :longitude, :id => "new_issue_longitude" %>
 
-  <%= f.file_field :image %>
+  <%= f.file_field :image, :id => "new_issue_image_button" %>
 	
   <div class="actions">
     <%= f.submit %>

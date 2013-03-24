@@ -25,9 +25,7 @@ body { padding-top: 60px; }
 }
 
 body {
-	padding-left: 0;
-	padding-right: 0;
-	padding-bottom: 40px;
+	padding: 35px 0 35px 0;
 }
 
 .navbar-fixed-top,
@@ -37,7 +35,16 @@ body {
 }
 
 .navbar-inverse .navbar-inner {
-	background: #228E0E; 
+background: #228e0e; /* Old browsers */
+background: -moz-linear-gradient(top,  #228e0e 0%, #44a030 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#228e0e), color-stop(100%,#44a030)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #228e0e 0%,#44a030 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #228e0e 0%,#44a030 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #228e0e 0%,#44a030 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #228e0e 0%,#44a030 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#228e0e', endColorstr='#44a030',GradientType=0 ); /* IE6-9 */
+
+
 	a.brand {
 		height: 33px;
 		width: 131px;
@@ -56,3 +63,37 @@ body {
 	}
 }
 
+.icon-camera {
+	font-size: 28px;
+}
+
+.navbar-fixed-bottom.navbar-inverse .navbar-inner{
+	background: #333333; /* Old browsers */
+background: -moz-linear-gradient(top,  #333333 0%, #222222 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#222222)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #333333 0%,#222222 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #333333 0%,#222222 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #333333 0%,#222222 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #333333 0%,#222222 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+
+	a.btn.btn-medium {
+		-webkit-font-smoothing: antialiased;
+		background: none;
+		color: #eee;
+		box-shadow: none;
+		border: none;
+		text-shadow: none;
+		border-radius: 0;
+		-webkit-border-radius: 0;		
+		i {
+			margin-right: 5px;
+		}
+		a.camera {
+		i.icon-camera {
+			font-size: 28px;	
+		}
+		padding: 0 10px;
+	}
+	} 
+}
