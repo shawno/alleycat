@@ -1,3 +1,17 @@
 Alleycat was the winning hackathon project from Morbify: A Murder Mystery Hackathon, sponsored by Mobify.
-
 http://www.mobify.com/go/morbify/
+
+The challenge was to gamify the mundane through mobile web. AlleyCat was built in a day.
+
+Our concept allows users to report overflowing trash cans or other municipal issues to the city from their smart phones. 
+Alleycat adds gamification to the reporting of trash by creating a leaderboard and assigning points for reporting the most issues. 
+Each issue is geotagged with the device's location, and users can use their device's camera to capture a photo of the issue. 
+
+The app is running on a free Heroku dyno, so it may take a minute to spin up when you hit the link.
+http://alleycatapp.herokuapp.com/issues/new
+
+All of the old photos have been cleared out, as we didn't bother with a cloud file storage system for the sake of 
+the hackathon. Heroku will hold the files locally, until the free dyno spins down after inactivity, and the photos 
+are lost. 
+
+
